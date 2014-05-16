@@ -1,6 +1,6 @@
 language: php
 
-php: [5.3.3, 5.3, 5.4, 5.5, hhvm]
+php: [5.5]
 
 before_script:
   - composer selfupdate
@@ -9,12 +9,12 @@ before_script:
 
 script:
   - bin/phpspec run
-  - bin/phpcs --standard=PSR1 .
-  - bin/phpcs --standard=PSR2 .
-  - bin/phpmd . text cleancode --exclude lightopenid
-  - bin/phpmd . text codesize --exclude lightopenid
-  - bin/phpmd . text controversial --exclude lightopenid
-  - bin/phpmd . text design --exclude lightopenid
-  - bin/phpmd . text naming --exclude lightopenid
-  - bin/phpmd . text unusedcode --exclude lightopenid
-  - bin/php phploc.phar .
+  - bin/phpcs --standard=PSR1 app/code
+  - bin/phpcs --standard=PSR2 app/code
+  - bin/phpmd app/code text cleancode --exclude lightopenid
+  - bin/phpmd app/code text codesize --exclude lightopenid
+  - bin/phpmd app/code text controversial --exclude lightopenid
+  - bin/phpmd app/code text design --exclude lightopenid
+  - bin/phpmd app/code text naming --exclude lightopenid
+  - bin/phpmd app/code text unusedcode --exclude lightopenid
+  - bin/php phploc.phar app/code
