@@ -8,14 +8,13 @@ before_script:
   - composer install --prefer-source
 
 script:
-  - bin/phpspec run  
-  - phpcs --standard=PSR1 .
-  - phpcs --standard=PSR2 .
-  - php phpcpd.phar --verbose .
-  - phpmd . text cleancode --exclude lightopenid
-  - phpmd . text codesize --exclude lightopenid
-  - phpmd . text controversial --exclude lightopenid
-  - phpmd . text design --exclude lightopenid
-  - phpmd . text naming --exclude lightopenid
-  - phpmd . text unusedcode --exclude lightopenid
-  - php phploc.phar .
+  - bin/phpspec run
+  - bin/phpcs --standard=PSR1 .
+  - bin/phpcs --standard=PSR2 .
+  - bin/phpmd . text cleancode --exclude lightopenid
+  - bin/phpmd . text codesize --exclude lightopenid
+  - bin/phpmd . text controversial --exclude lightopenid
+  - bin/phpmd . text design --exclude lightopenid
+  - bin/phpmd . text naming --exclude lightopenid
+  - bin/phpmd . text unusedcode --exclude lightopenid
+  - bin/php phploc.phar .
