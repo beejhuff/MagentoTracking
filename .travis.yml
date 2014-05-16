@@ -1,0 +1,21 @@
+language: php
+
+php: [5.3.3, 5.3, 5.4, 5.5, hhvm]
+
+before_script:
+  - composer selfupdate
+  - export COMPOSER_ROOT_VERSION=2.0.0-RC3
+  - composer install --prefer-source
+
+script:
+  - bin/phpspec run  
+  - phpcs --standard=PSR1 .
+  - phpcs --standard=PSR2 .
+  - php phpcpd.phar --verbose .
+  - phpmd . text cleancode --exclude lightopenid
+  - phpmd . text codesize --exclude lightopenid
+  - phpmd . text controversial --exclude lightopenid
+  - phpmd . text design --exclude lightopenid
+  - phpmd . text naming --exclude lightopenid
+  - phpmd . text unusedcode --exclude lightopenid
+  - php phploc.phar .
