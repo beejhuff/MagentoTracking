@@ -6,4 +6,41 @@
         </Jcowie_Tracking>
     </modules>
 
+    <global>
+        <models>
+            <jcowie_tracking>
+                <class>Jcowie_Tracking_Model</class>
+                <resourceModel>tracking_resource</resourceModel>
+            </jcowie_tracking>
+            <tracking_resource>
+                <class>Jcowie_Tracking_Model_Resource</class>
+                <entities>
+                    <tracking>
+                        <table>jcowie_tracking</table>
+                    </tracking>
+                </entities>
+            </tracking_resource>
+        </models>
+
+        <resources>
+            <jcowie_tracking_setup>
+                <setup>
+                    <module>Jcowie_Tracking</module>
+                    <class>Mage_Catalog_Model_Resource_Setup</class>
+                </setup>
+            </jcowie_tracking_setup>
+
+            <jcowie_tracking_read>
+                <connection>
+                    <use>core_read</use>
+                </connection>
+            </jcowie_tracking_read>
+            <jcowie_tracking_write>
+                <connection>
+                    <use>core_write</use>
+                </connection>
+            </jcowie_tracking_write>
+        </resources>
+    </global>
+
 </config>

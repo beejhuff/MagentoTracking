@@ -17,8 +17,11 @@ class Jcowie_Tracking_Block_CodeSpec extends ObjectBehavior
         $this->beConstructedWith(array('config_adapter' => $adapter));
     }
 
-    function it_should_return_enabled_tracking_code($adapter)
+    function it_should_return_enabled_tracking_code_for_header($adapter)
     {
-        $this->getTrackingCode()->shouldReturn('google');
+        $sampleScript = '<script>someTrackingCode</script>';
+
+        $adapter->getModel('jcowie/tracking')->willReturn($sampleScript);
+        $this->getTrackingCode()->shouldReturn($sampleScript);
     }
 }
