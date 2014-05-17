@@ -13,9 +13,7 @@ script:
 
   - bin/phpmd app/code text cleancode --exclude lightopenid
   - bin/phpmd app/code text codesize --exclude lightopenid
-  - bin/phpmd app/code text controversial --exclude lightopenid
   - bin/phpmd app/code text design --exclude lightopenid
   - bin/phpmd app/code text naming --exclude lightopenid
   - bin/phpmd app/code text unusedcode --exclude lightopenid
   
-  - bin/php phploc.phar app/code
