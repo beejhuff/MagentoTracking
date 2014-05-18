@@ -10,8 +10,6 @@ before_script:
 script:
   - bin/phpspec run
   - bin/phpcs --standard=rules/phpcs.xml app/code
-
-  - bin/phpmd app/code text cleancode --exclude lightopenid
   - bin/phpmd app/code text codesize --exclude lightopenid
   - bin/phpmd app/code text design --exclude lightopenid
   - bin/phpmd app/code text naming --exclude lightopenid
