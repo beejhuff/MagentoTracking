@@ -20,6 +20,8 @@ class Jcowie_Tracking_Block_Code
 
     public function getTrackingCode()
     {
-        // TODO: write logic here
+        $trackingCode = $this->_configAdapter->getModelData('jcowie_tracking/code');
+
+        return $trackingCode;
     }
 }
