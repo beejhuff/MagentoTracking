@@ -2,7 +2,7 @@
 <config>
     <modules>
         <Jcowie_Tracking>
-            <version>0.1.0</version>
+            <version>1.0.0</version>
         </Jcowie_Tracking>
     </modules>
 
@@ -12,12 +12,13 @@
                 <class>Jcowie_Tracking_Model</class>
                 <resourceModel>tracking_resource</resourceModel>
             </jcowie_tracking>
+
             <tracking_resource>
                 <class>Jcowie_Tracking_Model_Resource</class>
                 <entities>
-                    <tracking>
+                    <code>
                         <table>jcowie_tracking</table>
-                    </tracking>
+                    </code>
                 </entities>
             </tracking_resource>
         </models>

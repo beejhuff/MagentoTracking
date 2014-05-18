@@ -16,4 +16,4 @@ script:
   - bin/phpmd app/code text design --exclude lightopenid
   - bin/phpmd app/code text naming --exclude lightopenid
   - bin/phpmd app/code text unusedcode --exclude lightopenid
-  
+
