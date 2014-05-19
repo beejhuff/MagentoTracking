@@ -21,9 +21,9 @@ class Jcowie_Tracking_Block_CodeSpec extends ObjectBehavior
     {
         $sampleScript = '<script>someTrackingCode</script>';
 
-        $adapter->getModelData('jcowie_tracking/code')
+        $adapter->getHeadTrackingCode('jcowie_tracking/code', 1)
             ->willReturn($sampleScript);
 
-        $this->getTrackingCode()->shouldReturn($sampleScript);
+        $this->getHeadTrackingCode()->shouldReturn($sampleScript);
     }
 }

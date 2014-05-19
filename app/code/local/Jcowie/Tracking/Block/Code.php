@@ -18,10 +18,10 @@ class Jcowie_Tracking_Block_Code
         }
     }
 
-    public function getTrackingCode()
+    public function getHeadTrackingCode()
     {
-        $trackingCode = $this->_configAdapter->getModelData('jcowie_tracking/code');
+        $model = $this->_configAdapter->getHeadTrackingCode('jcowie_tracking/code', 1);
 
-        return $trackingCode;
+        return $model->getData();
     }
 }

@@ -1,10 +1,11 @@
 <?php
 class Jcowie_Tracking_Adapter_Config
 {
-    public function getModelData($model)
+    public function getHeadTrackingCode($model, $section)
     {
-        $model = Mage::getModel($model);
+        $model = Mage::getModel($model)->getCollection();
+        $model->addFieldToFilter('section', $section);
 
-        return $model->getCollection()->getData();
+        return $model;
     }
 }

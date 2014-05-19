@@ -34,6 +34,10 @@ $table = $installer->getConnection()->newTable($installer->getTable('jcowie_trac
         'update_time', Varien_Db_Ddl_Table::TYPE_TIMESTAMP, null, array(
         ), 'Updated Time'
     )
+    ->addColumn(
+        'section', Varien_Db_Ddl_Table::TYPE_INTEGER, null, array(
+        ), 'Head or Footer'
+    )
     ->setComment('Jcowie Tracking Code module');
 $installer->getConnection()->createTable($table);
 

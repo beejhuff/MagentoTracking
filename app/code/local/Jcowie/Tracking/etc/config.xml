@@ -42,6 +42,16 @@
                 </connection>
             </jcowie_tracking_write>
         </resources>
+
+        <frontend>
+            <layout>
+                <updates>
+                    <jcowie_opengraph>
+                        <file>jcowie/tracking.xml</file>
+                    </jcowie_opengraph>
+                </updates>
+            </layout>
+        </frontend>
     </global>
 
 </config>
