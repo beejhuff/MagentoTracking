@@ -1,1 +1,8 @@
-<p>Head place holder</p>
+<!-- Tracking head code -->
+<?php $codes = $this->getHeadTrackingCode(); ?>
+
+<?php if($codes): ?>
+    <?php foreach ($codes as $code): ?>
+        <?php echo $code['tracking_code']; ?>
+    <?php endforeach; ?>
+<?php endif; ?>

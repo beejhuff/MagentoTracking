@@ -7,6 +7,11 @@
     </modules>
 
     <global>
+        <blocks>
+            <jcowie_tracking>
+                <class>Jcowie_Tracking_Block</class>
+            </jcowie_tracking>
+        </blocks>
         <models>
             <jcowie_tracking>
                 <class>Jcowie_Tracking_Model</class>
@@ -42,16 +47,16 @@
                 </connection>
             </jcowie_tracking_write>
         </resources>
-
-        <frontend>
-            <layout>
-                <updates>
-                    <jcowie_opengraph>
-                        <file>jcowie/tracking.xml</file>
-                    </jcowie_opengraph>
-                </updates>
-            </layout>
-        </frontend>
     </global>
+
+    <frontend>
+        <layout>
+            <updates>
+                <jcowie_tracking>
+                    <file>jcowie/tracking.xml</file>
+                </jcowie_tracking>
+            </updates>
+        </layout>
+    </frontend>
 
 </config>

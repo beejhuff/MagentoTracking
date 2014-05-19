@@ -6,6 +6,6 @@ class Jcowie_Tracking_Adapter_Config
         $model = Mage::getModel($model)->getCollection();
         $model->addFieldToFilter('section', $section);
 
-        return $model;
+        return $model->getData();
     }
 }

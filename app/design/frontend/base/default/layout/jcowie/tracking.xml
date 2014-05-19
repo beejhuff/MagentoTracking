@@ -2,7 +2,7 @@
 <layout version="0.1.0">
     <default>
         <reference name="head">
-            <block type="jcowie_tracking/code" name="jcowie.tracking" template="jcowie/tracking/head.phtml"/>
+            <block type="jcowie_tracking/code" name="jcowie.code" template="jcowie/tracking/head.phtml"/>
         </reference>
     </default>
 </layout>

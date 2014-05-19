@@ -1,6 +1,6 @@
 <?php
 
-class Jcowie_Tracking_Block_Code
+class Jcowie_Tracking_Block_Code extends Mage_Core_Block_Template
 {
     /** @var \Jcowie_Tracking_Adapter_Config */
     private $_configAdapter;
@@ -22,6 +22,6 @@ class Jcowie_Tracking_Block_Code
     {
         $model = $this->_configAdapter->getHeadTrackingCode('jcowie_tracking/code', 1);
 
-        return $model->getData();
+        return $model;
     }
 }
