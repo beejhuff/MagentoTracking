@@ -29,7 +29,8 @@
             ["app/etc/modules/Jcowie_Tracking.xml" , "app/etc/modules/Jcowie_Tracking.xml"],
             ["app/code/local/Jcowie/Tracking","app/code/local/Jcowie/Tracking"],
             ["app/design/frontend/base/default/template/jcowie/tracking","app/design/frontend/base/default/template/jcowie/tracking"],
-            ["app/design/frontend/base/default/layout/jcowie","app/design/frontend/base/default/layout/jcowie"]
+            ["app/design/frontend/base/default/layout/jcowie","app/design/frontend/base/default/layout/jcowie"],
+            ["spec/", "../spec/"]
         ]
     },
     "config": {
