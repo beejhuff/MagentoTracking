@@ -2,6 +2,7 @@ MagentoTracking
 ===============
 
 [![Master Build Status](https://travis-ci.org/jamescowie/MagentoTracking.svg?branch=master)](http://travis-ci.org/jamescowie/MagentoTracking)
+[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/jamescowie/MagentoTracking/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/jamescowie/MagentoTracking/?branch=master)
 
 # About
 During my time working with Magento one of the most common requests I get as a developer is to add tracking code to areas of the website,
