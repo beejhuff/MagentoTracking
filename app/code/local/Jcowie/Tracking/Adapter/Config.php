@@ -1,6 +1,10 @@
 <?php
 class Jcowie_Tracking_Adapter_Config
 {
+    /**
+     * @param string $model
+     * @param integer $section
+     */
     public function getHeadTrackingCode($model, $section)
     {
         $model = Mage::getModel($model)->getCollection();
