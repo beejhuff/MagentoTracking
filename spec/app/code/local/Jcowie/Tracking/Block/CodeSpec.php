@@ -26,4 +26,11 @@ class Jcowie_Tracking_Block_CodeSpec extends ObjectBehavior
 
         $this->getHeadTrackingCode()->shouldReturn($sampleScript);
     }
+
+    function it_should_return_false_if_not_tracking_is_enabled($adapter)
+    {
+        $adapter->getHeadTrackingCode('jcowie_tracking/code', 1)->willReturn(false);
+        $this->getHeadTrackingCode()->shouldReturn(false);
+    }
+
 }

@@ -18,6 +18,9 @@ class Jcowie_Tracking_Block_Code extends Mage_Core_Block_Template
         }
     }
 
+    /**
+     * @return mixed
+     */
     public function getHeadTrackingCode()
     {
         $model = $this->_configAdapter->getHeadTrackingCode('jcowie_tracking/code', 1);
